@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <h2 class="name">I am Mina</h2>
+    <button id="learn-more" type="button">Learn More</button>
+    <p class="hide">I like dogs and reading and running and javascript</p>
+    <button id="learn-less" type="button">Learn Less</button>
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript">
+      var toggleHide = function() {
+        $("p").toggleClass("hide");
+      };
+      $("#learn-more").on("click", toggleHide);
+      $("p").html("<a href='http://google.com'>google.com</a>");
+    </script>
+  </body>
+</html>
