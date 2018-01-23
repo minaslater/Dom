@@ -28,17 +28,17 @@ var $ = function(selector) {
   var toggleClass = function(newClass) {
     for (var i = 0; i < element.length; i++) {
       var elemClassList = element[i].classList;
-      console.log(elemClassList);
+      console.log("hi");
       var isAlreadyAClass = false;
       for (var j = 0; j < elemClassList.length; j++) {
         if (elemClassList[j] === newClass) {
-          isAlreadyClass = true;
+          isAlreadyAClass = true;
         }
       }
       if (isAlreadyAClass) {
-        addClass(newClass);
-      } else {
         removeClass(newClass);
+      } else {
+        addClass(newClass);
       }
     }
   };
